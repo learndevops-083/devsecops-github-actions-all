@@ -29,7 +29,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     needs: build
-    name: Run the SCA scan on the source code
+    name: Deploy and perform SCA scan on Dev
     if: github.event_name == 'pull_request'
     environment: 
       name: dev
